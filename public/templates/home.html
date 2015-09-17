@@ -1,0 +1,340 @@
+<div class="main-container">
+    <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
+        <!--<ul class="slides">
+            <li class="overlay image-bg ">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="../img/African%20youths.jpg" />
+                </div>
+                <div class="container v-align-transform">
+                    <div class="row">
+                        <div class="col-sm-offset-1 text-center col-sm-10">
+                            <h1 class="mb40 mb-xs-16 large">SCOYAN,<br /> The socio-economic youth associations of nigeria</h1>
+                            <h6 class="uppercase mb16"></h6>
+                            <p class="lead mb40">
+                                Strengthening the institutional building and operations
+                                <br />of youth organizations
+                            </p>
+                            <a class="btn btn-lg btn-filled" href="#">Join us</a>
+                        </div>
+                    </div>
+                    &lt;!&ndash;end of row&ndash;&gt;
+                </div>
+                &lt;!&ndash;end of container&ndash;&gt;
+            </li>
+            <li class="overlay image-bg">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="../img/African%20youths.jpg" />
+                </div>
+                <div class="container v-align-transform">
+                    <div class="row">
+                        <div class="col-sm-offset-1 text-center col-sm-10">
+                            <h1 class="mb40 mb-xs-16 large">The socio-economic youth associations of nigeria</h1>
+                            <h6 class="uppercase mb16"></h6>
+                            <p class="lead mb40">
+                                Strengthening the institutional building and operations
+                                <br />of youth organizations
+                            </p>
+                            <a class="btn btn-lg btn-white" href="#">Join us</a>
+                        </div>
+                    </div>
+                    &lt;!&ndash;end of row&ndash;&gt;
+                </div>
+                &lt;!&ndash;end of container&ndash;&gt;
+            </li>
+        </ul>-->
+        <flex-slider flex-slide="s in mySlides track by $index">
+            <li class="overlay image-bg ">
+                <div class="image-background">
+                    <img ng-src="{{s.img}}">
+                </div>
+
+                <div class="container v-align-transform">
+                    <div class="row">
+                        <div class="col-sm-offset-1 text-center col-sm-10">
+                            <h1 class="mb40 mb-xs-16 large">{{s.title}}<br /> {{s.second_title}}</h1>
+                            <h6 class="uppercase mb16"></h6>
+                            <p class="lead mb40">
+                                {{s.other_text}}
+                                <br />{{s.other_text2}}
+                            </p>
+                            <a class="btn btn-lg btn-filled" ui-sref="register">{{s.button_text}}</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+            </li>
+        </flex-slider>
+    </section>
+</div>
+
+<section class="no-padding">
+    <div class="container">
+        <div class="row mb64 mb-xs-24">
+            <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
+                <h3>What we offer</h3>
+            </div>
+        </div>
+        <!--end of row-->
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-sm-6 mb40 mb-xs-24">
+                <i class="ti-layers icon inline-block mb16 fade-3-4"></i>
+                <h4>Business and Entrepreneurship</h4>
+                <p>
+                    This track caters to the range of emerging or aspiring entrepreneurs who expect to take on leadership roles within the private sector or build their own business ventures on the continent.
+                </p>
+            </div>
+            <div class="col-md-5 col-sm-6 mb40 mb-xs-24">
+                <i class="ti-gallery icon inline-block mb16 fade-3-4"></i>
+                <h4>Civic Leadership</h4>
+                <p>
+                    This track is oriented to those who are or aspire to be civically engaged and serve the public through non-governmental organizations, community based organizations, or volunteerism.                </p>
+            </div>
+            <div class="col-md-5 col-md-offset-1 col-sm-6 mb40 mb-xs-24">
+                <i class="ti-package icon inline-block mb16 fade-3-4"></i>
+                <h4>Public Management</h4>
+                <p>
+                    This track is tailored to those who work or aspire to work in any level of government (including elected positions), regional organizations such as the African Union or the West Africa Community, international organizations such as the United Nations, or other publicly minded organizations or think tanks                </p>
+            </div>
+            <div class="col-md-5 col-sm-6 mb40 mb-xs-24">
+                <i class="ti-infinite icon inline-block mb16 fade-3-4"></i>
+                <h4>Business and Entrepreneurship</h4>
+                <p>
+                    This track caters to the range of emerging or aspiring entrepreneurs who expect to take on leadership roles within the private sector or build their own business ventures on the continent.
+                </p>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
+<section class="pb64 pb-xs-40 highlights">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="feature feature-2 filled text-center">
+                    <div class="text-center">
+                        <i class="ti-layers icon-sm"></i>
+                        <h5 class="uppercase">Upcoming events</h5>
+                    </div>
+                    <p>
+                        Find out what events are coming up at SCOYAN.Visit Our Events Page for Details
+                    </p>
+                    <a class="btn btn-lg btn-filled" ui-sref="register">Click here</a>
+                </div>
+                <!--end of feature-->
+            </div>
+            <div class="col-sm-4">
+                <div class="feature feature-2 filled text-center">
+                    <div class="text-center">
+                        <i class="ti-gallery icon-sm"></i>
+                        <h5 class="uppercase">News</h5>
+                    </div>
+                    <p>
+                        For latest Press Releases, Advertorials, Newspaper Reports, OP-EDS and more
+                    </p>
+                    <a class="btn btn-lg btn-filled" ui-sref="register">Click here</a>
+                </div>
+                <!--end of feature-->
+            </div>
+            <div class="col-sm-4">
+                <div class="feature feature-2 filled text-center">
+                    <div class="text-center">
+                        <i class="ti-package icon-sm"></i>
+                        <h5 class="uppercase">Join SCOYAN</h5>
+                    </div>
+                    <p>
+                        Get Involved by finding out ways you can partner with SCOYAN
+                    </p>
+                    <a class="btn btn-lg btn-filled" ui-sref="register">Join us</a>
+                </div>
+                <!--end of feature-->
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
+<section class="bg-secondary">
+    <div class="container">
+        <div class="row mb64 mb-xs-24">
+            <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
+                <h3>Latest News</h3>
+            </div>
+        </div>
+        <div class="row masonry news mb40">
+            <div class="col-sm-4 post-snippet masonry-item">
+                <a ui-sref="news">
+                    <img alt="Post Image" src="img/blog-single-3.jpg" />
+                </a>
+                <div class="inner">
+                    <a href="#">
+                        <h5 class="mb0">A simple image post to start off an excellent masonry blog layout.</h5>
+                        <span class="inline-block mb16">September 23, 2015</span>
+                    </a>
+                    <hr>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                    <a class="btn btn-sm" href="#">Read More</a>
+                    <ul class="tags pull-right">
+                        <li>
+                            <a class="btn btn-sm btn-icon" href="#">
+                                <i class="ti-twitter-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-sm btn-icon" href="#">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--end of snippet-->
+
+            <div class="col-sm-4 post-snippet masonry-item">
+                <a ui-sref="news">
+                    <img alt="Post Image" src="img/blog-single-3.jpg" />
+                </a>
+                <div class="inner">
+                    <a href="#">
+                        <h5 class="mb0">A simple image post to start off an excellent masonry blog layout.</h5>
+                        <span class="inline-block mb16">September 23, 2015</span>
+                    </a>
+                    <hr>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                    <a class="btn btn-sm" href="#">Read More</a>
+                    <ul class="tags pull-right">
+                        <li>
+                            <a class="btn btn-sm btn-icon" href="#">
+                                <i class="ti-twitter-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-sm btn-icon" href="#">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 post-snippet masonry-item">
+                <a ui-sref="news">
+                    <img alt="Post Image" src="img/blog-single-3.jpg" />
+                </a>
+                <div class="inner">
+                    <a href="#">
+                        <h5 class="mb0">A simple image post to start off an excellent masonry blog layout.</h5>
+                        <span class="inline-block mb16">September 23, 2015</span>
+                    </a>
+                    <hr>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                    <a class="btn btn-sm" href="#">Read More</a>
+                    <ul class="tags pull-right">
+                        <li>
+                            <a class="btn btn-sm btn-icon" href="#">
+                                <i class="ti-twitter-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-sm btn-icon" href="#">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--end of snippet-->
+        </div>
+    </div>
+    <!--end of container-->
+</section>
+<section>
+    <div class="container">
+        <div class="row mb80 mb-xs-40">
+            <div class="col-sm-12 text-center">
+                <h2 class="bold italic uppercase fade-3-4 mb0">Upcoming events</h2>
+            </div>
+        </div><!--end of row-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                            <div class="tab-content text-left">
+                                <div>
+                                    <div class="overflow-hidden">
+                                        <div class="inline-block pull-left">
+                                            <h6 class="uppercase mb8">15th Sptember 2015</h6>
+                                            <h6 class="uppercase mb8">06:30am - 07:30am</h6>
+                                            <h4>Formal Scoyan Launch</h4>
+                                            <p class="mb0">
+                                                420 Damba Street<br />
+                                                Wuse 2,Abuja<br />
+                                                <a href="#">Get Directions</a>
+                                            </p>
+                                        </div>
+                                        <div class="inline-block pull-right pt48 pt-xs-24">
+                                            <a class="btn btn-lg" href="#">Attend this event</a>
+                                        </div>
+                                    </div>
+                                    <hr class="mt40 mb40 mt-xs-0 mb-xs-24">
+                                </div><!--end of class-->
+                                <div>
+                                    <div class="overflow-hidden">
+                                        <div class="inline-block pull-left">
+                                            <h6 class="uppercase mb8">16th Sptember 2015</h6>
+                                            <h6 class="uppercase mb8">08:00am - 09:00am</h6>
+                                            <h4>Awakening the enterpreneurship in youths</h4>
+                                            <p class="mb0">
+                                                420 Accra Street<br />
+                                                Wuse 3, Abuja<br />
+                                                <a href="#">Get Directions</a>
+                                            </p>
+                                        </div>
+                                        <div class="inline-block pull-right pt48 pt-xs-24">
+                                            <a class="btn btn-lg" href="#">Attend this event</a>
+                                        </div>
+                                    </div>
+                                    <hr class="mt40 mb40 mt-xs-0 mb-xs-24">
+                                </div><!--end of class-->
+                                <div>
+                                    <div class="overflow-hidden">
+                                        <div class="inline-block pull-left">
+                                            <h6 class="uppercase mb8">17th Sptember 2015</h6>
+                                            <h6 class="uppercase mb8">06:00pm - 07:00pm</h6>
+                                            <h4>SCOYAN Picnic</h4>
+                                            <p class="mb0">
+                                                Millineum Park <br />
+                                                Abuja<br />
+                                                <a href="#">Get Directions</a>
+                                            </p>
+                                        </div>
+                                        <div class="inline-block pull-right pt48 pt-xs-24">
+                                            <a class="btn btn-lg" href="#">Attend this event</a>
+                                        </div>
+                                    </div>
+                                    <hr class="mt40 mb40 mt-xs-0 mb-xs-24">
+                                </div><!--end of class-->
+
+                            </div><!--end of tab content-->
+                </div>
+                <!--end of button tabs-->
+            </div>
+        </div>
+    </div><!--end of container-->
+</section>
+<div class="modal-strip bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 overflow-hidden">
+                <i class="ti-announcement icon icon-sm pull-left color-primary"></i>
+                <p class="mb0 pull-left"><strong>SCOYAN 1.0</strong>  is currently under development, please bear with us</p>
+                <a class="btn btn-sm btn-filled mb0" href="#">See More</a>
+            </div>
+        </div><!--end of row-->
+    </div><!--end of container-->
+</div><!--end modal strip-->

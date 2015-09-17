@@ -1,0 +1,73 @@
+<div class="main-container">
+    <section class="cover fullscreen image-bg overlay">
+        <div class="image-background">
+            <img alt="image" class="background-image" src="../img/home2.jpg" />
+        </div>
+        <div class="container v-align-transform">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="feature bordered text-center">
+                        <h4 class="uppercase">Register As an Individual</h4>
+                        <form class="text-left" name="RegForm" ng-submit="registerUser()" required>
+                           <div ng-messages="RegForm.name.$error" ng-if="RegForm.name.$dirty" style="color:white" role="alert">
+                            <div ng-message="required">You did not enter your name</div>
+                            </div>
+                            <input type="text" ng-model="user.name" name="name" placeholder="Name" required />
+
+                            <div ng-messages="RegForm.username.$error" ng-if="RegForm.username.$dirty" style="color:white" role="alert">
+                                <div ng-message="required">You did not enter your username</div>
+                            </div>
+                            <input type="text" name="username" ng-model="user.username" placeholder="Username" required="" />
+
+                            <div ng-messages="RegForm.email.$error" ng-if="RegForm.email.$dirty" style="color:white" role="alert">
+                                <div ng-message="required">You did not enter your email address</div>
+                            </div>
+                            <input type="text" name="email" ng-model="user.email" placeholder="Email Address" required="" />
+
+                            <div ng-messages="RegForm.password.$error" ng-if="RegForm.password.$dirty" style="color:white" role="alert">
+                                <div ng-message="required">You did not enter a password</div>
+                                <div ng-message="minlength">Password is too short</div>
+                            </div>
+                            <input type="password" ng-minlength="5" name="password" ng-model="user.password" placeholder="Password" required />
+
+                            <div ng-messages="RegForm.confirm_password.$error" ng-if="RegForm.confirm_password.$dirty" style="color:white" role="alert">
+                                <div ng-message="required">You did not confirm the password</div>
+                                <div ng-message="repeat">Passwords do not match.</div>
+                            </div>
+                            <input type="password" name="confirm_password" ng-model="confirm_password" required repeat-password="password" placeholder="Password" />
+
+                            <div ng-messages="RegForm.address.$error" ng-if="RegForm.address.$dirty" style="color:white" role="alert">
+                                <div ng-message="required">You did not enter an address</div>
+                            </div>
+                            <textarea placeholder="Address" name="address" ng-model="user.address" required rows="3"></textarea>
+
+                            <input type="submit" ng-disabled="RegForm.$invalid" value="Register" />
+                            <span us-spinner spinner-key="spinner-1"></span>
+                        </form>
+                        <p class="mb0">By signing up, you agree to our
+                            <a href="#">Terms Of Use</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="feature bordered text-center">
+                        <h4 class="uppercase">Register as an Association</h4>
+                        <form class="text-left">
+                            <input type="text" name="name" placeholder="Username" />
+                            <input type="text" name="email" placeholder="Email Address" />
+                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Confirm Password" />
+                            <input type="submit" value="Register" />
+                        </form>
+                        <p class="mb0">By signing up, you agree to our
+                            <a href="#">Terms Of Use</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    </div>

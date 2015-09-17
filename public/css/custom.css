@@ -1,0 +1,43 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+.image-background{
+   /* background: url("../img/concert1.jpg");*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+.cover.fullscreen .slides > li {
+    height: 80vh;
+}
+
+.highlights{
+    padding-top: 0px;
+}
+
+.newsFlyIn .news-item.fadeIn {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.newsFlyIn .news-item {
+}
+
+.container .news-item {
+    margin-bottom: 30px;
+}
+
+.news-item {
+    max-width: 100%;
+}
+
+.news{
+    opacity: 1;
+}
+.no-padding{
+    padding: 0px 0px 60px;
+}
